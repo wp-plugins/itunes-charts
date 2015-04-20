@@ -1,0 +1,135 @@
+.iTunes-widget h3.widget-title {
+    text-transform: none;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #444;
+}
+.iTunes-widget .loading {
+    background-image: url('../img/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px;
+    width: 100%;
+    height: 26px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+    .iTunes-widget .loading {
+        background-image: url('../img/loader@2x.gif');
+    }
+}
+.iTunes-widget ul {
+    list-style: none!important;
+    padding: 0;
+    margin: 0;
+}
+.iTunes-widget ul li {
+    list-style: none!important;
+    padding: 0!important;
+    margin: 0 0 10px!important;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.iTunes-widget ul li:last-child {
+    margin: 0!important;
+}
+.iTunes-widget ul li audio:not([controls]) {
+    display: none;
+}
+.iTunes-widget ul li a {
+    text-decoration: none;
+    outline: 0!important;
+}
+.iTunes-widget ul li a:hover p {
+    text-decoration: underline;
+}
+.iTunes-widget ul li .artwork-wrapper {
+    position: relative;
+    margin-right: 10px;
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+.iTunes-widget ul li .artwork-wrapper a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.iTunes-widget ul li .artwork-wrapper .player-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 7px;
+    box-shadow: none;
+}
+.iTunes-widget ul li img.artwork {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    width: 38px;
+}
+.iTunes-widget ul li:hover img.artwork {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+.iTunes-widget ul li:hover .artwork-wrapper .player-container {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+.iTunes-widget ul li .artwork-wrapper .player-container .play-control {
+    background-image: url('../img/play.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+    .iTunes-widget ul li .artwork-wrapper .player-container .play-control {
+        background-image: url('../img/play@2x.png');
+    }
+}
+.iTunes-widget ul li .artwork-wrapper .player-container .stop-control {
+    background-image: url('../img/stop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+    .iTunes-widget ul li .artwork-wrapper .player-container .stop-control {
+        background-image: url('../img/stop@2x.png');
+    }
+}
+.iTunes-widget ul li p.title {
+    padding-left: 48px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+.iTunes-widget ul li p.artist {
+    padding-left: 48px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #999;
+    margin: 0;
+}
